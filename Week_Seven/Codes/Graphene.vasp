@@ -1,0 +1,40 @@
+2.46
+Lattice Constant
+1.0 0.0 0.0
+-0.5 0.8660254037844386 0.0
+0.0 0.0 1.0
+C
+2
+Direct
+0.6666666666 0.3333333333 0.0
+0.3333333333 0.6666666666 0.0
+onsite: 0.0 0.0
+k point mesh for DOS: 500 500
+Energy range for DOS: -5.0 5.0
+Energy point for DOS: 1000
+Broadening value for DOS: 0.05
+Centre of k circle mesh: 0.3333333333 0.3333333333 0.0
+Number of k circle mesh: 5
+Delta radius of k circle mesh: 0.02
+Delta angle of k circle mesh: 60.0 30.0 15.0 10.0 8.0
+Intrinsic Spin Orbit Coupling strength: 0.005
+Rashba SOC strength: 0.004
+Dresselhaus SOC strength: 0.006
+k point mesh for wilson loop: 500 500
+!!!!!!!!!Kubo Greenwood Method!!!!!!!!!!!!!
+k point mesh for Kubo Greenwood method: 500 500
+broadening value for Kubo Greenwood method: 0.05
+Energy range for Kubo Greenwood method: -5.0 5.0
+Energy point for Kubo Greenwood method: 1000
+!!!Non-Equilibrium Green Function Method!!!
+Energy range for NEGF method: -5.0 5.0
+Energy point for NEGF method: 1000
+k point mesh for NEGF method: 1 100
+Temperature for I-V Curve: 300
+broadening value for NEGF method: 0.025
+Voltage range for NEGF method: -0.5 0.5
+Voltage point for NEGF method: 100
+Direction of the charge transport: x
+Supercell for the electrode: 4 2
+Supercell for the central scattering region: 10 2
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

@@ -1,0 +1,103 @@
+{
+  "method": "pdftoppm full-page rendering; no content modifications",
+  "page_numbering": "physical PDF pages, including cover",
+  "sources": [
+    {
+      "pdf": "Lecture_Twenty_Four.pdf",
+      "sha256": "366cfe6ee28394e6901bec56c09b9d271bbd45c13a2299750616a2014ac17b1b",
+      "pdf_pages": 6,
+      "rendered_pages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "width": 1920,
+      "images": 4
+    },
+    {
+      "pdf": "Lecture_Twenty_One.pdf",
+      "sha256": "ecac0eb4e48524e9db4a32d4798a36f25107ae31be94383b81bd0bf03c8bf60a",
+      "pdf_pages": 15,
+      "rendered_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "width": 1920,
+      "images": 13
+    },
+    {
+      "pdf": "Lecture_Twenty_Three.pdf",
+      "sha256": "0b96408b5ee636a265052ab5ffe5dc28b96af122168d46c952fff0edc4a31efa",
+      "pdf_pages": 31,
+      "rendered_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "width": 1920,
+      "images": 29
+    },
+    {
+      "pdf": "Lecture_Twenty_Two.pdf",
+      "sha256": "acc058273e42b0b1c0d85c4a0170503103fb7c00b969dc911c3aa79e411f5ca2",
+      "pdf_pages": 17,
+      "rendered_pages": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "width": 1920,
+      "images": 15
+    }
+  ]
+}

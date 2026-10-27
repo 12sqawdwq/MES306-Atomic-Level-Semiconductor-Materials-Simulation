@@ -1,0 +1,15 @@
+2.46
+Lattice Constant
+1.0 0.0 0.0
+-0.5 0.8660254037844386 0.0
+0.0 0.0 1.0
+C
+2
+Direct
+0.6666666666 0.3333333333 0.0
+0.3333333333 0.6666666666 0.0
+onsite: 0.0 0.0
+k point mesh for DOS: 500 500
+Energy range for DOS: -5.0 5.0
+Energy point for DOS: 1000
+Broadening value for DOS: 0.05
