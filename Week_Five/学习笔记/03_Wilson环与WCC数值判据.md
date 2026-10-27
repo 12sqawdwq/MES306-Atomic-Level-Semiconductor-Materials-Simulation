@@ -157,9 +157,9 @@ $$
 
 ### 原理深入
 
-- 讲义的 $(0,\pi)$ 等写法以 $\mathbf k\cdot\mathbf a_i$ 为坐标，即分数坐标 $(k_1,k_2)\in\{0,\tfrac12\}^2$。在六角晶格中，这 4 点是 Γ 和 3 个 M 点，**不包括 K、K′**（K 不是 TRIM，$-\mathbf K$ 等价于 K′）。
+- 讲义的 $(0,\pi)$ 等写法以 $\mathbf k\cdot\mathbf a_i$ 为坐标，即分数坐标 $`(k_1,k_2)\in\{0,\tfrac12\}^2`$。在六角晶格中，这 4 点是 Γ 和 3 个 M 点，**不包括 K、K′**（K 不是 TRIM，$-\mathbf K$ 等价于 K′）。
 - 对 Wilson 环而言，关键是：当被扫描参数 $k_1=0$ 或 $1/2$ 时，整条环路在 TRS 下映射到自身。于是 $W(k_1)$ 的本征相位**成对简并**，这就是 WCC 图在 $k_1=0$ 与 $k_1=1/2$ 两端“钉成对”的原因。
-- TRS 还给出 $\{\theta_j(-k_1)\}=\{\theta_j(k_1)\}$，所以只需看半个区间 $k_1\in[0,1/2]$，另一半是镜像。
+- TRS 还给出 $`\{\theta_j(-k_1)\}=\{\theta_j(k_1)\}`$，所以只需看半个区间 $k_1\in[0,1/2]$，另一半是镜像。
 
 ### Ref
 
@@ -226,7 +226,7 @@ $$
 $$
 M^{(i)}_{mn}=\langle u_m(k_2^{(i)})|u_n(k_2^{(i+1)})\rangle,\qquad
 D=M^{(0)}M^{(1)}\cdots M^{(N-1)},\qquad
-\bar x_j=\frac{\operatorname{atan2}(\operatorname{Im}\lambda_j,\operatorname{Re}\lambda_j)}{2\pi},
+\bar x_j=\frac{\mathrm{atan2}(\mathrm{Im}\lambda_j,\mathrm{Re}\lambda_j)}{2\pi},
 $$
 
 其中 $u(k_2^{(N)})$ 由闭合条件给出（见本文第 3.3 小节）。

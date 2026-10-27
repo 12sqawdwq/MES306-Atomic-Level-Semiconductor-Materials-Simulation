@@ -88,7 +88,7 @@ $$
 \lim_{\eta\to0^+}\frac{1}{x\pm i\eta}=\mathcal P\frac1x\mp i\pi\delta(x),
 $$
 
-可得 $\operatorname{Tr}A=2\pi\sum_n\delta(E-\varepsilon_n)=2\pi D(E)$。对角元给出第 $m$ 个原子/轨道上的局域态密度 $\rho_m(E)=A_{mm}(E)/2\pi$。
+可得 $\mathrm{Tr}A=2\pi\sum_n\delta(E-\varepsilon_n)=2\pi D(E)$。对角元给出第 $m$ 个原子/轨道上的局域态密度 $\rho_m(E)=A_{mm}(E)/2\pi$。
 
 ### 原理深入
 
@@ -240,7 +240,7 @@ $$
 ### 中文解释
 
 $$
-\boxed{T(E)=\operatorname{Tr}\big[\Gamma_L(E)\,G_C^R(E)\,\Gamma_R(E)\,G_C^A(E)\big]}
+\boxed{T(E)=\mathrm{Tr}\big[\Gamma_L(E)\,G_C^R(E)\,\Gamma_R(E)\,G_C^A(E)\big]}
 $$
 
 $\Gamma$ 与 $G$ 都是 $N\times N$ 矩阵（$N$ 为中心区基函数数），迹把矩阵乘积压缩成一个无量纲实数。它把上一讲抽象的 $T(E)$ 与器件的微观哈密顿量连接起来。
@@ -249,8 +249,8 @@ $\Gamma$ 与 $G$ 都是 $N\times N$ 矩阵（$N$ 为中心区基函数数），�
 
 - **为什么是实数且非负**：$\Gamma_L^{1/2}G^R\Gamma_R G^A\Gamma_L^{1/2}=(\Gamma_L^{1/2}G^R\Gamma_R^{1/2})(\cdots)^\dagger$ 是半正定矩阵，迹 $\ge0$。数值上迹的虚部只是舍入误差（代码输出的虚部约 $10^{-21}$）。
 - **上界**：$T(E)\le\min(M_L,M_R)$，即不超过两侧引线的开放模式数。
-- **与 S 矩阵的关系**：可以写成 $T=\operatorname{Tr}(t^\dagger t)$，$t=i\Gamma_R^{1/2}G^R\Gamma_L^{1/2}$（在适当的模式基中）〔补充，[FL](README.md#ref-fl)〕。
-- **矩阵乘法顺序不能随意交换**，但迹的循环性允许写成 $\operatorname{Tr}[\Gamma_RG^A\Gamma_LG^R]$ 等等价形式；时间反演对称时左右透射相等。
+- **与 S 矩阵的关系**：可以写成 $T=\mathrm{Tr}(t^\dagger t)$，$t=i\Gamma_R^{1/2}G^R\Gamma_L^{1/2}$（在适当的模式基中）〔补充，[FL](README.md#ref-fl)〕。
+- **矩阵乘法顺序不能随意交换**，但迹的循环性允许写成 $\mathrm{Tr}[\Gamma_RG^A\Gamma_LG^R]$ 等等价形式；时间反演对称时左右透射相等。
 - **维度一致**：$\Gamma_L$ 只在与左引线相接的格点上非零，实际计算中可以只取 $G^R$ 的“右上角块”$G^R_{1N}$，大幅降低计算量（递归格林函数法）〔补充〕。
 
 ### Ref
@@ -360,13 +360,13 @@ $$
 从引线 $\alpha$ 流入器件的电流等于该引线粒子数的变化率：$I_\alpha=e\langle dN_\alpha/dt\rangle=\frac{ie}{\hbar}\langle[H,N_\alpha]\rangle$，改写为
 
 $$
-I_\alpha=\frac{e}{h}\int\operatorname{Tr}\big[\Sigma^<_\alpha G^R-\Sigma^A_\alpha G^<+\text{h.c.}\big]dE.
+I_\alpha=\frac{e}{h}\int\mathrm{Tr}\big[\Sigma^<_\alpha G^R-\Sigma^A_\alpha G^<+\text{h.c.}\big]dE.
 $$
 
 代入 Keldysh 方程和恒等式 $G^R-G^A=-iG^R\Gamma G^A$（$\Gamma=\Gamma_L+\Gamma_R$），化为
 
 $$
-I_L=\frac{2e}{h}\int\operatorname{Tr}[\Gamma_LG^R\Gamma_RG^A]\,[f_L-f_R]\,dE,
+I_L=\frac{2e}{h}\int\mathrm{Tr}[\Gamma_LG^R\Gamma_RG^A]\,[f_L-f_R]\,dE,
 $$
 
 即 Landauer 公式，透射就是 Fisher–Lee 形式。
@@ -376,17 +376,17 @@ $$
 **黑板上的代数**（〔补充〕逐步核验）。利用 $(\Sigma^<)^\dagger=-\Sigma^<$、$(G^<)^\dagger=-G^<$：
 
 $$
-\operatorname{Tr}[\Sigma^<_LG^R+\text{h.c.}]=\operatorname{Tr}[\Sigma^<_L(G^R-G^A)]=if_L\operatorname{Tr}[\Gamma_L(-iA)]=f_L\operatorname{Tr}[\Gamma_LA],
+\mathrm{Tr}[\Sigma^<_LG^R+\text{h.c.}]=\mathrm{Tr}[\Sigma^<_L(G^R-G^A)]=if_L\mathrm{Tr}[\Gamma_L(-iA)]=f_L\mathrm{Tr}[\Gamma_LA],
 $$
 
 $$
-\operatorname{Tr}[-\Sigma^A_LG^<+\text{h.c.}]=\operatorname{Tr}[G^<(\Sigma^R_L-\Sigma^A_L)]=-i\operatorname{Tr}[\Gamma_LG^<].
+\mathrm{Tr}[-\Sigma^A_LG^<+\text{h.c.}]=\mathrm{Tr}[G^<(\Sigma^R_L-\Sigma^A_L)]=-i\mathrm{Tr}[\Gamma_LG^<].
 $$
 
-于是迹 $=\operatorname{Tr}\big[\Gamma_L(f_LA-G^n)\big]$。再代入 $A=G^R(\Gamma_L+\Gamma_R)G^A$、$G^n=G^R(\Gamma_Lf_L+\Gamma_Rf_R)G^A$，$\Gamma_L$ 项相消：
+于是迹 $=\mathrm{Tr}\big[\Gamma_L(f_LA-G^n)\big]$。再代入 $A=G^R(\Gamma_L+\Gamma_R)G^A$、$G^n=G^R(\Gamma_Lf_L+\Gamma_Rf_R)G^A$，$\Gamma_L$ 项相消：
 
 $$
-\operatorname{Tr}\big[\Gamma_L(f_LA-G^n)\big]=\operatorname{Tr}[\Gamma_LG^R\Gamma_RG^A]\,(f_L-f_R).
+\mathrm{Tr}\big[\Gamma_L(f_LA-G^n)\big]=\mathrm{Tr}[\Gamma_LG^R\Gamma_RG^A]\,(f_L-f_R).
 $$
 
 **物理意义**：$f_LA$ 是“若与左库平衡应有的占据”，$G^n$ 是实际占据；二者之差按 $\Gamma_L$ 加权就是流出/流入左引线的净电流。

@@ -187,7 +187,7 @@ $$
 
 - **定义一致性**：正文说 $A_L,B_L$ 属于左引线，$A_R,B_R$ 属于右引线；因此左侧应画 $A_L$（入射）与 $B_L$（出射），右侧应画 $A_R$（入射）与 $B_R$（出射）。原图把 $A_R$、$B_L$ 画反了。
 - **幺正性推出 $T+R=1$**：$S^\dagger S=I$ 的 (1,1) 元给出 $|r|^2+|t|^2=1$。若 $A,B$ 是**通量归一**的振幅（已乘 $\sqrt{v}$），这一结论才成立；左右引线速度不同时，直接用波函数振幅会得到错误的 $|t|^2$。
-- **多通道**时 $t$ 是矩阵，$T=\operatorname{Tr}(t^\dagger t)$，$T$ 可以大于 1（但不超过通道数）。
+- **多通道**时 $t$ 是矩阵，$T=\mathrm{Tr}(t^\dagger t)$，$T$ 可以大于 1（但不超过通道数）。
 
 〔补充〕矩形势垒在 $E>V_0$ 时，当势垒内波数满足 $k'a=n\pi$ 时 $T=1$（过垒共振），这就是图中振荡的来源。
 
@@ -220,7 +220,7 @@ $T(E)$ 是“量子力学指纹”（隧穿、干涉、几何），$f_L-f_R$ 是
 - $\mathcal T(E)$ 一般**不是**概率，取值在 $[0,M(E)]$；本周代码算出的 $T(E)$ 最高约 1.44，就是因为它是多个通道的和（[08 代码导读](08_代码导读.md)）。
 - 公式成立的条件：**相干、弹性**输运（电子入射与出射能量相同），且 $T(E)$ 与偏压无关或已在给定偏压下算好。偏压改变器件内电势时，严格做法是 $T(E,V)$，需与 Poisson 方程自洽。
 - 第 13 页的说明写“single-channel conductor”，但公式本身对多通道也成立，只要把 $T$ 换成 $\mathcal T$。
-- 若通道在中心区发生混合，更一般的写法是 $\mathcal T=\operatorname{Tr}(t^\dagger t)$，不必先找到“独立通道”。
+- 若通道在中心区发生混合，更一般的写法是 $\mathcal T=\mathrm{Tr}(t^\dagger t)$，不必先找到“独立通道”。
 
 ### Ref
 
@@ -255,7 +255,7 @@ $-\partial f/\partial E$ 是以 $E_F$ 为中心、面积为 1 的钟形“采样
 **窗口函数的性质**：
 
 $$
--\frac{\partial f}{\partial E}=\frac{1}{4k_BT}\operatorname{sech}^2\!\frac{E-E_F}{2k_BT},
+-\frac{\partial f}{\partial E}=\frac{1}{4k_BT}\mathrm{sech}^2\!\frac{E-E_F}{2k_BT},
 \qquad\int_{-\infty}^{\infty}\Big(-\frac{\partial f}{\partial E}\Big)dE=1.
 $$
 

@@ -134,7 +134,7 @@ $$
 
 不要把一般有限宽势垒模型直接与窄高势垒极限混用；后者才使用上面的简化 $F(E)$。
 
-**更深入：传递矩阵为何给出余弦判据？〔补充〕** 对实势、恒定质量的一维定态问题，可用一周期传递矩阵 $\mathcal T$ 推进 $(\psi,\psi')^T$，且 $\det\mathcal T=1$。其 Bloch 本征值为 $e^{\pm ika}$，所以 $\operatorname{Tr}\mathcal T=2\cos(ka)$。直接匹配窄高势垒可得到 $\operatorname{Tr}\mathcal T/2=F(E)$。当 $|F|>1$，两个本征值不再位于单位圆上，出现增长/衰减解，而不是实 k 的传播态。
+**更深入：传递矩阵为何给出余弦判据？〔补充〕** 对实势、恒定质量的一维定态问题，可用一周期传递矩阵 $\mathcal T$ 推进 $(\psi,\psi')^T$，且 $\det\mathcal T=1$。其 Bloch 本征值为 $e^{\pm ika}$，所以 $\mathrm{Tr}\mathcal T=2\cos(ka)$。直接匹配窄高势垒可得到 $\mathrm{Tr}\mathcal T/2=F(E)$。当 $|F|>1$，两个本征值不再位于单位圆上，出现增长/衰减解，而不是实 k 的传播态。
 
 ### Ref
 

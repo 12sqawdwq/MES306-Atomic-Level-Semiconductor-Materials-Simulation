@@ -49,7 +49,7 @@ Kubo–Greenwood：σ ∝ ∫dE (−∂f/∂E) Tr[v δ(E−H) v δ(E−H)]
 两个贯穿全周的要点：
 
 1. **η 有两重身份**：数学上保证傅里叶积分收敛与因果性；物理上可看作散射率（寿命的倒数）。在完美晶体的 KG 计算里，远离 Dirac 点的 σ 近似正比于 $1/\eta$，所以结果依赖于 η 的取值，不能把 η 当作可随意取的“小量”。
-2. **讲义中的 KG 前置系数需要修正**：若 $G^R-G^A=-2\pi i\,\delta(E-H)$，则 $\operatorname{Tr}\{v(G^R-G^A)v(G^R-G^A)\}=-4\pi^2\operatorname{Tr}[v\delta v\delta]$，不能直接沿用 $\pi e^2\hbar/V$。详见 [07 勘误第 4 条](07_讲义勘误与易错点.md#4-kubogreenwood-公式的前置系数)。
+2. **讲义中的 KG 前置系数需要修正**：若 $G^R-G^A=-2\pi i\,\delta(E-H)$，则 $`\mathrm{Tr}\{v(G^R-G^A)v(G^R-G^A)\}=-4\pi^2\mathrm{Tr}[v\delta v\delta]`$，不能直接沿用 $\pi e^2\hbar/V$。详见 [07 勘误第 4 条](07_讲义勘误与易错点.md#4-kubogreenwood-公式的前置系数)。
 
 阅读每个模块建议：**看截图 → 读中文解释 → 读原理深入 → 查 Ref**；遇到公式先做量纲与符号检查。
 
@@ -123,7 +123,7 @@ Ref 区分三种来源：
 
 - **代换检查**：把 $G^R-G^A=-2\pi i\delta$ 代入，看前置系数是否自洽。
 - **量纲**：二维电导率单位为 S（即“每方块”的电导），三维为 S/m；$e^2/h\approx3.874\times10^{-5}$ S。
-- **符号**：耗散要求 $\operatorname{Re}\sigma_{\mu\mu}(\omega)\ge0$。
+- **符号**：耗散要求 $\mathrm{Re}\sigma_{\mu\mu}(\omega)\ge0$。
 - **对称性**：石墨烯有 $C_3$ 对称性，二维二阶张量因此各向同性，$\sigma_{xx}=\sigma_{yy}$、$\sigma_{xy}=0$（无磁场时）。
 - **极限**：$\eta$ 改变一倍时，金属区 σ 是否近似反比变化；Dirac 点处是否接近 $4e^2/(\pi h)$（含自旋）。
 - **复现**：本笔记用独立 Python 脚本按程序算法重算了若干能量点，与 `Conductivity_along_x_axis.dat` 一致到全部有效数字，详见 [08 代码导读](08_代码导读.md)。

@@ -254,7 +254,7 @@ $$
 | 原胞约定（讲义第 14 页） | $e^{i\mathbf k\cdot\mathbf R_n}$ | $\sum t\,e^{i\mathbf k\cdot\mathbf R_j}$ | 第十讲 |
 | 原子位置约定 | $e^{i\mathbf k\cdot(\mathbf R_n+\boldsymbol\tau_\mu)}$ | $\sum t\,e^{i\mathbf k\cdot(\mathbf R_j+\boldsymbol\tau_\nu-\boldsymbol\tau_\mu)}$ | 第十二讲与示例代码 |
 
-两者相差对角幺正变换 $U=\operatorname{diag}(e^{i\mathbf k\cdot\boldsymbol\tau_\mu})$：$H^{\rm atom}(\mathbf k)=U^\dagger H^{\rm cell}(\mathbf k)U$。所以**本征值（能带）完全相同**，本征矢只差每个分量的相位。讲义第 14 页称原胞约定为“标准约定”，这只是众多文献中的一种；课程补充文献 [BM09] 专门讨论了两种基的差别：能带相同，但 $H(\mathbf k)$ 不是 BZ 周期函数（原子位置约定下 $H(\mathbf k+\mathbf G)\ne H(\mathbf k)$，只差幺正变换），涉及位置算符、Berry 相位等量时必须用一致的约定。
+两者相差对角幺正变换 $U=\mathrm{diag}(e^{i\mathbf k\cdot\boldsymbol\tau_\mu})$：$H^{\rm atom}(\mathbf k)=U^\dagger H^{\rm cell}(\mathbf k)U$。所以**本征值（能带）完全相同**，本征矢只差每个分量的相位。讲义第 14 页称原胞约定为“标准约定”，这只是众多文献中的一种；课程补充文献 [BM09] 专门讨论了两种基的差别：能带相同，但 $H(\mathbf k)$ 不是 BZ 周期函数（原子位置约定下 $H(\mathbf k+\mathbf G)\ne H(\mathbf k)$，只差幺正变换），涉及位置算符、Berry 相位等量时必须用一致的约定。
 
 ### Ref
 

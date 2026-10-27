@@ -142,24 +142,24 @@ $$
 
 ### 中文解释
 
-电流的期望值等于 $\operatorname{Tr}(\rho J)$。平衡态本身不载流，所以线性部分来自 $\rho_1$。利用迹的循环性，可以把对易子从 $[V,\rho_0]$ “挪”到 $[J,V]$ 上，最终得到：**电流响应 = 推迟的电流-电流对易子关联函数 × 矢势**。时域中是卷积，傅里叶变换到频域后变为乘积，比例系数就是 $\sigma_{\mu\nu}(\omega)$。
+电流的期望值等于 $\mathrm{Tr}(\rho J)$。平衡态本身不载流，所以线性部分来自 $\rho_1$。利用迹的循环性，可以把对易子从 $[V,\rho_0]$ “挪”到 $[J,V]$ 上，最终得到：**电流响应 = 推迟的电流-电流对易子关联函数 × 矢势**。时域中是卷积，傅里叶变换到频域后变为乘积，比例系数就是 $\sigma_{\mu\nu}(\omega)$。
 
 ### 原理深入
 
 $$
-\langle J_\mu(t)\rangle=\operatorname{Tr}[\rho_1(t)J_\mu]
+\langle J_\mu(t)\rangle=\mathrm{Tr}[\rho_1(t)J_\mu]
 $$
 
-（讲义写成 $\operatorname{Tr}[\rho_1(t),J_\mu]$，逗号会被误读为对易子。）代入上节结果并用
+（讲义写成 $\mathrm{Tr}[\rho_1(t),J_\mu]$，逗号会被误读为对易子。）代入上节结果并用
 
 $$
-\operatorname{Tr}([A,B]C)=\operatorname{Tr}(A[B,C])=\operatorname{Tr}(B[C,A]),
+\mathrm{Tr}([A,B]C)=\mathrm{Tr}(A[B,C])=\mathrm{Tr}(B[C,A]),
 $$
 
 得
 
 $$
-\langle J_\mu(t)\rangle=-\frac{i}{\hbar}\int_{-\infty}^{t}\operatorname{Tr}\{\rho_0[J_{\mu,I}(t-t'),V(t')]\}\,dt',
+\langle J_\mu(t)\rangle=-\frac{i}{\hbar}\int_{-\infty}^{t}\mathrm{Tr}\{\rho_0[J_{\mu,I}(t-t'),V(t')]\}\,dt',
 $$
 
 其中 $J_{\mu,I}(s)=e^{iH_0s/\hbar}J_\mu e^{-iH_0s/\hbar}$。再代入 $V(t')=-\int\mathbf J(\mathbf r')\cdot\mathbf A(\mathbf r',t')d^3r'$，**$V$ 自带的负号会与前面的 $-i/\hbar$ 抵消**：
@@ -176,7 +176,7 @@ $$
 
 （另加上节提到的抗磁项。）讲义第 8 页把同一个 $i/\hbar$ 既放进 $\Phi$ 的定义，又保留在 $\langle J\rangle=-\frac{i}{\hbar}\int\Phi A$ 的前面，导致整体多出因子 $-i/\hbar$；见 [07 第 2 条](07_讲义勘误与易错点.md)。
 
-**平衡分布**：$\rho_0=e^{-\beta(H_0-\mu N)}/Z$，$Z=\operatorname{Tr}e^{-\beta(H_0-\mu N)}$ 才是配分函数（讲义把 $\rho_0$ 标作 “Partition function”）。
+**平衡分布**：$\rho_0=e^{-\beta(H_0-\mu N)}/Z$，$Z=\mathrm{Tr}e^{-\beta(H_0-\mu N)}$ 才是配分函数（讲义把 $\rho_0$ 标作 “Partition function”）。
 
 **到 σ 的一步**（第 9 页的文字描述）：对均匀场，$\Pi^R$ 只依赖 $t-t'$，卷积定理给出 $J_\mu(\omega)=\Pi^R_{\mu\nu}(\omega)A_\nu(\omega)$；再用 $E(\omega)=i\omega A(\omega)$：
 
@@ -202,7 +202,7 @@ $$
 
 Kubo 公式把输运系数完全写成**平衡态**的电流关联函数：时间积分负责“电流如何演化”，λ 积分（$0\to\beta$）负责“热平均”。为保证 $t\to\infty$ 时积分收敛，把 $\omega$ 换成 $\omega+i\eta$，相当于外场被无限缓慢地打开（绝热开启），体系对过去的扰动只有有限记忆；这也是**因果性**的要求。
 
-$\operatorname{Re}\sigma(\omega)$ 正比于平衡态电流涨落的谱密度：外场中的能量耗散（焦耳热）与体系内在的电流涨落（电子的“布朗运动”）是同一件事的两面——涨落-耗散定理。
+$\mathrm{Re}\sigma(\omega)$ 正比于平衡态电流涨落的谱密度：外场中的能量耗散（焦耳热）与体系内在的电流涨落（电子的“布朗运动”）是同一件事的两面——涨落-耗散定理。
 
 ### 原理深入
 
@@ -239,28 +239,28 @@ $$
 
 ### 中文解释
 
-单色场下时间平均的耗散功率密度为 $\bar P=\tfrac12\operatorname{Re}[\sigma(\omega)]|E(\omega)|^2$：**实部决定吸收（转化为热），虚部描述无耗散的相位滞后（色散）**。因果性迫使实部和虚部互为 Hilbert 变换，即 Kramers–Kronig（KK）关系。
+单色场下时间平均的耗散功率密度为 $\bar P=\tfrac12\mathrm{Re}[\sigma(\omega)]|E(\omega)|^2$：**实部决定吸收（转化为热），虚部描述无耗散的相位滞后（色散）**。因果性迫使实部和虚部互为 Hilbert 变换，即 Kramers–Kronig（KK）关系。
 
 ### 原理深入
 
-设 $E(t)=\operatorname{Re}[E_0e^{-i\omega t}]$、$J(t)=\operatorname{Re}[\sigma E_0e^{-i\omega t}]$，则
+设 $E(t)=\mathrm{Re}[E_0e^{-i\omega t}]$、$J(t)=\mathrm{Re}[\sigma E_0e^{-i\omega t}]$，则
 
 $$
-\overline{J\cdot E}=\tfrac12\operatorname{Re}[\sigma(\omega)]\,|E_0|^2 .
+\overline{J\cdot E}=\tfrac12\mathrm{Re}[\sigma(\omega)]\,|E_0|^2 .
 $$
 
-稳定的被动体系必须吸收能量，所以 $\operatorname{Re}\sigma_{\mu\mu}(\omega)\ge0$。
+稳定的被动体系必须吸收能量，所以 $\mathrm{Re}\sigma_{\mu\mu}(\omega)\ge0$。
 
 **KK 关系**（$\sigma$ 在上半平面解析且 $|\omega|\to\infty$ 时足够快衰减）：
 
 $$
-\operatorname{Re}\sigma(\omega)=\frac1\pi\,\mathcal P\!\int_{-\infty}^{\infty}\frac{\operatorname{Im}\sigma(\omega')}{\omega'-\omega}d\omega',\qquad
-\operatorname{Im}\sigma(\omega)=-\frac1\pi\,\mathcal P\!\int_{-\infty}^{\infty}\frac{\operatorname{Re}\sigma(\omega')}{\omega'-\omega}d\omega'.
+\mathrm{Re}\sigma(\omega)=\frac1\pi\,\mathcal P\!\int_{-\infty}^{\infty}\frac{\mathrm{Im}\sigma(\omega')}{\omega'-\omega}d\omega',\qquad
+\mathrm{Im}\sigma(\omega)=-\frac1\pi\,\mathcal P\!\int_{-\infty}^{\infty}\frac{\mathrm{Re}\sigma(\omega')}{\omega'-\omega}d\omega'.
 $$
 
-讲义只给出了第一式（符号正确），第二式有负号。对理想金属，$\operatorname{Re}\sigma$ 在 $\omega=0$ 处有 Drude 权重 $\propto\delta(\omega)$，对应 $\operatorname{Im}\sigma\propto1/\omega$，使用 KK 时要单独处理这一奇点。
+讲义只给出了第一式（符号正确），第二式有负号。对理想金属，$\mathrm{Re}\sigma$ 在 $\omega=0$ 处有 Drude 权重 $\propto\delta(\omega)$，对应 $\mathrm{Im}\sigma\propto1/\omega$，使用 KK 时要单独处理这一奇点。
 
-**实践意义**：实验常只测吸收谱（$\operatorname{Re}\sigma$），虚部可由 KK 变换得到，但需要足够宽的频率范围。
+**实践意义**：实验常只测吸收谱（$\mathrm{Re}\sigma$），虚部可由 KK 变换得到，但需要足够宽的频率范围。
 
 ### Ref
 
@@ -279,7 +279,7 @@ $$
 
 $$
 \sigma_{\mu\nu}=\frac{\pi e^2\hbar}{\Omega}\int dE\left(-\frac{\partial f}{\partial E}\right)
-\operatorname{Tr}\big[v_\mu\,\delta(E-H)\,v_\nu\,\delta(E-H)\big].
+\mathrm{Tr}\big[v_\mu\,\delta(E-H)\,v_\nu\,\delta(E-H)\big].
 $$
 
 本页最后一式（每自旋、DC）是**标准且正确**的；中间几行有若干记号问题。
@@ -289,7 +289,7 @@ $$
 **非相互作用电子的规范结果**（单粒子本征态 $|n\rangle$，能量 $\varepsilon_n$，占据 $f_n$）：
 
 $$
-\operatorname{Re}\sigma_{\mu\mu}(\omega)=\frac{\pi e^2\hbar}{\Omega}\sum_{n,m}
+\mathrm{Re}\sigma_{\mu\mu}(\omega)=\frac{\pi e^2\hbar}{\Omega}\sum_{n,m}
 \frac{f_n-f_m}{\varepsilon_m-\varepsilon_n}\,|\langle n|v_\mu|m\rangle|^2\,
 \delta(\varepsilon_m-\varepsilon_n-\hbar\omega).
 $$
@@ -304,10 +304,10 @@ $$
 
 $$
 \boxed{\sigma_{\mu\mu}^{\text{DC}}=\frac{\pi e^2\hbar}{\Omega}\int dE\left(-\frac{\partial f}{\partial E}\right)
-\operatorname{Tr}\big[v_\mu\delta(E-H)v_\mu\delta(E-H)\big]\quad(\text{每自旋}).}
+\mathrm{Tr}\big[v_\mu\delta(E-H)v_\mu\delta(E-H)\big]\quad(\text{每自旋}).}
 $$
 
-$T=0$ 时 $-\partial f/\partial E=\delta(E-E_F)$，于是 $\sigma(E_F)=\frac{\pi e^2\hbar}{\Omega}\operatorname{Tr}[v\delta(E_F-H)v\delta(E_F-H)]$。
+$T=0$ 时 $-\partial f/\partial E=\delta(E-E_F)$，于是 $\sigma(E_F)=\frac{\pi e^2\hbar}{\Omega}\mathrm{Tr}[v\delta(E_F-H)v\delta(E_F-H)]$。
 
 **讲义中需注意的记号**（详见 [07 第 3–4 条](07_讲义勘误与易错点.md)）：
 
@@ -353,14 +353,14 @@ $$
 **正确的格林函数形式**：由 $\delta(E-H)=-\dfrac{1}{2\pi i}(G^R-G^A)$，
 
 $$
-\operatorname{Tr}[v\delta v\delta]=\frac{1}{(2\pi i)^2}\operatorname{Tr}[v(G^R-G^A)v(G^R-G^A)]
-=-\frac{1}{4\pi^2}\operatorname{Tr}[v(G^R-G^A)v(G^R-G^A)],
+\mathrm{Tr}[v\delta v\delta]=\frac{1}{(2\pi i)^2}\mathrm{Tr}[v(G^R-G^A)v(G^R-G^A)]
+=-\frac{1}{4\pi^2}\mathrm{Tr}[v(G^R-G^A)v(G^R-G^A)],
 $$
 
 $$
 \boxed{\sigma_{\mu\mu}=\frac{\hbar e^2}{4\pi\Omega}\int dE\left(-\frac{\partial f}{\partial E}\right)
-\operatorname{Tr}\big[v_\mu(G^R-G^A)\,v_\mu(G^A-G^R)\big]
-=\frac{\hbar e^2}{\pi\Omega}\int dE\left(-\frac{\partial f}{\partial E}\right)\operatorname{Tr}\big[v_\mu\operatorname{Im}G^R\,v_\mu\operatorname{Im}G^R\big].}
+\mathrm{Tr}\big[v_\mu(G^R-G^A)\,v_\mu(G^A-G^R)\big]
+=\frac{\hbar e^2}{\pi\Omega}\int dE\left(-\frac{\partial f}{\partial E}\right)\mathrm{Tr}\big[v_\mu\mathrm{Im}G^R\,v_\mu\mathrm{Im}G^R\big].}
 $$
 
 讲义保留了 δ 形式的前置系数 $\pi e^2\hbar/V$ 并直接换成 $(G^R-G^A)$ 的乘积，结果差一个因子 $-1/(4\pi^2)$（连符号都反了）。课程程序除以的 $4\pi$ 正对应正确形式中的 $\hbar e^2/(4\pi\Omega)$，见 [08 代码导读](08_代码导读.md)。
@@ -368,7 +368,7 @@ $$
 讲义写的下标 $G^R_n$、$G^R_m$ 是在提示“在本征基中取对角元”，即
 
 $$
-\operatorname{Tr}[v(G^R-G^A)v(G^R-G^A)]=\sum_{n,m}|\langle n|v|m\rangle|^2\,g_n(E)\,g_m(E),\quad
+\mathrm{Tr}[v(G^R-G^A)v(G^R-G^A)]=\sum_{n,m}|\langle n|v|m\rangle|^2\,g_n(E)\,g_m(E),\quad
 g_n=\frac{-2i\eta}{(E-\varepsilon_n)^2+\eta^2},
 $$
 
